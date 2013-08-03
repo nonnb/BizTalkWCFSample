@@ -1,0 +1,172 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="3fd0f092-61a6-4ff3-ac5b-3119af562598" LowerBound="1.1" HigherBound="39.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BizTalkWCF.WcfPorts" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="7435a4f5-c95a-4191-a736-05731e0954b9" ParentLink="Module_PortType" LowerBound="20.1" HigherBound="31.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;IService&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IService" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="99dcc371-8fb7-4810-b985-fbf426cc26b3" ParentLink="PortType_OperationDeclaration" LowerBound="22.1" HigherBound="26.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;GetData&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="GetData" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="26c82a5b-e26e-4f79-8cd6-3e2dcddacd45" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="24.13" HigherBound="24.42">
+                    <om:Property Name="Ref" Value="BizTalkWCF.WcfPorts.IService_GetData_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;YourNameSpaceHere:IService_GetData_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;YourNameSpaceHere/IService/GetData&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="419cc8b0-cde7-4d76-83f1-bcc5c93a50e8" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="24.44" HigherBound="24.74">
+                    <om:Property Name="Ref" Value="BizTalkWCF.WcfPorts.IService_GetData_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;YourNameSpaceHere:IService_GetData_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;YourNameSpaceHere/IService/GetDataResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="5de902f1-aa53-4e20-b682-35619103dfbd" ParentLink="PortType_OperationDeclaration" LowerBound="26.1" HigherBound="30.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;GetDataUsingDataContract&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="GetDataUsingDataContract" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="79a52798-5027-4820-94bf-be45260e0e2d" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="28.13" HigherBound="28.59">
+                    <om:Property Name="Ref" Value="BizTalkWCF.WcfPorts.IService_GetDataUsingDataContract_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;YourNameSpaceHere:IService_GetDataUsingDataContract_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;YourNameSpaceHere/IService/GetDataUsingDataContract&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="f93ef5b7-de37-430d-b326-fcdb161ad805" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="28.61" HigherBound="28.108">
+                    <om:Property Name="Ref" Value="BizTalkWCF.WcfPorts.IService_GetDataUsingDataContract_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;YourNameSpaceHere:IService_GetDataUsingDataContract_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;YourNameSpaceHere/IService/GetDataUsingDataContractResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="c8a9906c-72bc-43f0-a858-9b63cfaf214d" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IService_GetData_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IService_GetData_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="cd908885-9eed-4fde-bd12-f70cfc918bb1" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="BizTalkWCF.WcfPorts.MyService_YourNameSpaceHere.GetData" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="665f24f7-2d55-4b01-9def-292eedc6b59a" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IService_GetData_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IService_GetData_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="ef549b14-a88e-4291-b0b9-80ac95358a99" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="BizTalkWCF.WcfPorts.MyService_YourNameSpaceHere.GetDataResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="1e7b7708-60c7-4b83-bee7-080641c85120" ParentLink="Module_MessageType" LowerBound="12.1" HigherBound="16.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IService_GetDataUsingDataContract_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IService_GetDataUsingDataContract_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="68eea1e2-df60-482e-938e-1224c9e191b6" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="14.1" HigherBound="15.1">
+                <om:Property Name="ClassName" Value="BizTalkWCF.WcfPorts.MyService_YourNameSpaceHere.GetDataUsingDataContract" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="7b17a914-d69d-487b-9e14-897b3e12f8a5" ParentLink="Module_MessageType" LowerBound="16.1" HigherBound="20.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IService_GetDataUsingDataContract_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IService_GetDataUsingDataContract_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="f99e22bc-94b1-4bcd-bccc-4b62ac615c5a" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="18.1" HigherBound="19.1">
+                <om:Property Name="ClassName" Value="BizTalkWCF.WcfPorts.MyService_YourNameSpaceHere.GetDataUsingDataContractResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="16b0b4d8-d0ef-4234-9fff-8d7552a0cc93" ParentLink="Module_ServiceDeclaration" LowerBound="31.1" HigherBound="38.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;MyService&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="MyServiceClient" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="ffe508ea-1cee-4072-b1e4-585e8c10a245" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BizTalkWCF.WcfPorts
+{
+    public messagetype IService_GetData_InputMessage
+    {
+        body MyService_YourNameSpaceHere.GetData parameters;
+    };
+    public messagetype IService_GetData_OutputMessage
+    {
+        body MyService_YourNameSpaceHere.GetDataResponse parameters;
+    };
+    public messagetype IService_GetDataUsingDataContract_InputMessage
+    {
+        body MyService_YourNameSpaceHere.GetDataUsingDataContract parameters;
+    };
+    public messagetype IService_GetDataUsingDataContract_OutputMessage
+    {
+        body MyService_YourNameSpaceHere.GetDataUsingDataContractResponse parameters;
+    };
+    public porttype IService
+    {
+        requestresponse GetData
+        {
+            IService_GetData_InputMessage, IService_GetData_OutputMessage
+        };
+        requestresponse GetDataUsingDataContract
+        {
+            IService_GetDataUsingDataContract_InputMessage, IService_GetDataUsingDataContract_OutputMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service MyServiceClient
+    {
+        body ()
+        {
+        }
+    }
+}
+
