@@ -21,7 +21,7 @@ namespace BizTalkWCF.Schemas {
     <xs:complexType>
       <xs:sequence>
         <xs:element name=""Name"" type=""xs:string"" />
-        <xs:element name=""IsAddSuffix"" type=""xs:string"" />
+        <xs:element name=""IsAddSuffix"" type=""xs:boolean"" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
